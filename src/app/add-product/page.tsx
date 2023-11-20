@@ -34,27 +34,27 @@ export default function AddProductPage() {
           required
           name="name"
           placeholder="Name"
-          className="input-bordered input mb-3 w-full"
+          className="input-bordered input mb-3 w-full bg-slate-800"
         />
         <textarea
           required
           name="description"
           placeholder="Description"
-          className="textarea-bordered textarea mb-3 w-full"
+          className="textarea-bordered textarea mb-3 w-full bg-slate-800"
         />
         <input
           required
           name="imageUrl"
           placeholder="Image URL"
           type="url"
-          className="input-bordered input mb-3 w-full"
+          className="input-bordered input mb-3 w-full bg-slate-800"
         />
         <input
           required
           name="price"
           placeholder="Price"
           type="number"
-          className="input-bordered input mb-3 w-full"
+          className="input-bordered input mb-3 w-full bg-slate-800"
         />
         <FormSubmitButton className="btn-block">Add Product</FormSubmitButton>
       </form>
