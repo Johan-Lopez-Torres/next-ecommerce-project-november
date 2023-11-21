@@ -6,6 +6,10 @@ export type CartWithProducts = Prisma.CartGetPayload<{
   include: { items: { include: { product: true } } };
 }>;
 
+export type CartItemWithProduct = Prisma.CartItemGetPayload<{
+  include: { product: true };
+}>;
+
 export type ShoppingCart = CartWithProducts & {
   size: number;
   subtotal: number;
@@ -16,7 +20,7 @@ export async function getCart(): Promise<ShoppingCart | null> {
   const cart = localCartId
     ? await prisma.cart.findUnique({
         where: { id: localCartId },
-        include: { items: { include: { product:true } } },
+        include: { items: { include: { product: true } } },
       })
     : null;
 
