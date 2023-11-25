@@ -21,11 +21,6 @@ export async function incrementProductQuantity(productId: string) {
         },
       },
     });
-
-    fgdgfdg
-    dfdsfsd
-    dfsd
-
   } else {
     await prisma.cart.update({
       where: { id: cart.id },
