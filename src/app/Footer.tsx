@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="footer flex justify-around bg-base-300 p-16 text-lg text-base-content">
+    <footer className="footer flex justify-around bg-base-200 p-16 text-lg text-base-content">
       <nav>
         <header
           className="footer-title  text-orange-400 opacity-100"
